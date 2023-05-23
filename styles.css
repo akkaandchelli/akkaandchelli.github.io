@@ -68,19 +68,6 @@ h1 {
     float: right;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .header-right {
-        float: none;
-    }
-}
-
 /* nav bar ends */
 
 /* footer starts */
@@ -126,7 +113,7 @@ footer {
 .middle {
     transition: .5s ease;
     opacity: 0;
-    transform: translate(0%, -200%);
+    transform: translate(0%, -500%);
     text-align: center;
 }
 
@@ -135,6 +122,42 @@ footer {
     color: #49274A;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+
+    .header a {
+        float: left;
+        color: #49274A;
+        background-color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .header a.logo {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* .row {
+        display:grid;
+        padding-top: 10%;
+    }
+    
+    .column {
+        display: unset;
+    } */
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        transform: translate(0%, -300%);
+        text-align: center;
+    }
 }
 
 /* images end */
