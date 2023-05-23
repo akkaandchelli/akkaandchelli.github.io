@@ -115,6 +115,18 @@ footer {
     display: none;
 }
 
+.row_follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column_follow {
+    flex: auto;
+    max-width: 70px;
+    padding: 20px;
+}
+
 h2 {
     width: 100%; 
     text-align: center; 
