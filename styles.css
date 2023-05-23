@@ -115,22 +115,37 @@ footer {
     display: none;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 600px) {
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #49274A;; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ h2 span { 
+     background:#fff; 
+     color: #49274A;
+     font-size: 150%;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     padding:0 10px; 
+ }
+
+@media screen and (max-width: 700px) {
 
     .header a {
         float: left;
         color: #49274A;
         background-color: white;
         text-align: center;
-        padding: 12px;
+        padding: 5px;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 25px;
     }
 
     .header a.logo {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
     }
 
@@ -157,35 +172,13 @@ footer {
 
     }
 
-}
-
-@media screen and (max-width: 500px) {
-
-    .header a {
-        float: left;
+    h2 span { 
+        background:#fff; 
         color: #49274A;
-        background-color: white;
-        text-align: center;
-        padding: 8px;
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 100%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding:0 10px; 
     }
-
-    .header a.logo {
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    footer {
-        bottom: 0;
-        width: 100%;
-        color: #49274A;
-        text-align: center;
-        font-size: 12px;
-    }
-
-
 
 }
 
