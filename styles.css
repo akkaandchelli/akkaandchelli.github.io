@@ -115,6 +115,10 @@ footer {
     display: none;
 }
 
+.row_3 {
+    display: flex;
+}
+
 .row_follow {
     display: flex;
     align-items: center;
