@@ -100,7 +100,9 @@ footer {
 
 .column {
     flex: 25%;
-    padding: 1px;
+    padding-left: 2px;
+    padding-top: 4px;
+    padding-right: 2px;
 }
 
 .column:hover .image {
