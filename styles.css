@@ -1,5 +1,5 @@
 body {
-    background-color: #F8EEE7;
+    background-color: white;
 }
 
 h1 {
@@ -87,22 +87,16 @@ footer {
 
 .column {
     flex: 25%;
-    padding-left: 2px;
-    padding-top: 4px;
-    padding-right: 2px;
+    padding: 10px;
+    padding-top: 20px;
 }
 
 .column:hover .image {
-    opacity: 0.3;
-}
-
-.column:hover .middle {
-    opacity: 1;
+    opacity: 0.45;
 }
 
 
 .image {
-    opacity: 1;
     display: block;
     width: 100%;
     height: auto;
@@ -110,18 +104,15 @@ footer {
     backface-visibility: hidden;
 }
 
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    transform: translate(0%, -500%);
-    text-align: center;
-}
-
 .text_1 {
     background-color: white;
     color: #49274A;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+.row_2 {
+    display: none;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -143,21 +134,29 @@ footer {
         font-weight: bold;
     }
 
-    /* .row {
-        display:grid;
-        padding-top: 10%;
-    }
-    
-    .column {
-        display: unset;
-    } */
-
-    .middle {
-        transition: .5s ease;
-        opacity: 0;
-        transform: translate(0%, -300%);
+    footer {
+        bottom: 0;
+        width: 100%;
+        color: #49274A;
         text-align: center;
+        font-size: 12px;
     }
+
+    /* images start */
+    .row {
+        display: none;
+    }
+
+    .row_2 {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 10px;
+
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -177,6 +176,16 @@ footer {
         font-size: 16px;
         font-weight: bold;
     }
+
+    footer {
+        bottom: 0;
+        width: 100%;
+        color: #49274A;
+        text-align: center;
+        font-size: 12px;
+    }
+
+
 
 }
 
