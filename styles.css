@@ -132,20 +132,78 @@ footer {
 }
 
 h2 {
-    width: 100%; 
-    text-align: center; 
-    border-bottom: 1px solid #49274A;; 
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #49274A;
+    ;
     line-height: 0.1em;
-    margin: 10px 0 20px; 
- } 
- 
- h2 span { 
-     background:#fff; 
-     color: #49274A;
-     font-size: 150%;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     padding:0 10px; 
- }
+    margin: 10px 0 20px;
+}
+
+h2 span {
+    background: #fff;
+    color: #49274A;
+    font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input[type=text], input[type=email], textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.row_form {
+    display: flex;
+}
+
+.column_form {
+    flex: 25%;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.image_form_2 {
+    display: none;
+}
+
+.row_form_2 {
+    display: none;
+}
+
 
 @media screen and (max-width: 700px) {
 
@@ -188,12 +246,25 @@ h2 {
 
     }
 
-    h2 span { 
-        background:#fff; 
+    h2 span {
+        background: #fff;
         color: #49274A;
         font-size: 100%;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        padding:0 10px; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 0 10px;
+    }
+
+    .row_form {
+        display: none;
+    }
+    
+    .row_form_2 {
+        display: block;
+    }
+
+    .image_form_2 {
+        display: inline;
+        max-height: 80%;
     }
 
 }
